@@ -54,6 +54,28 @@ public class AlgorithmSort {
         System.out.println();
         System.out.print("The data add to ArrayList ::" + data);
 
+        System.out.println();
+        System.out.print("Algorith Buble Sort :: ");
+
+        for (int d = 1; d < a.length; d++) {
+            for (int e = 0; e < a.length - 1; e++) {
+                if (a[e + 1] < a[e]) {
+                    int temp = a[e + 1];
+                    a[e + 1] = a[e];
+                    a[e] = temp;
+                }
+
+            }
+        }
+        // add and print
+        for (int f = 0; f < a.length; f++) {
+            System.out.println(a[f] + ",");
+            data.add(String.valueOf(a[f]));
+        }
+
+        System.out.println();
+        System.out.print("The data add to ArrayList ::" + data);
+
     }
 
 }
